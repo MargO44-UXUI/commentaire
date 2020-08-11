@@ -60,7 +60,7 @@ if(!empty($_POST))
         
         <?php
         
-        $req = $bdd->prepare('SELECT * FROM commentaires ORDER BY id DESC');
+        $req = $bdd->prepare('SELECT * FROM commentaire ORDER BY id DESC');
         $req->execute();
         while($data = $req->fetch()):?>
         
